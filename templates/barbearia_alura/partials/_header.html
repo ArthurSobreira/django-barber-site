@@ -1,0 +1,13 @@
+{% load static %}
+<header>
+    <div class="box"> 
+        <h1><img src="{% static 'assets/images/logo.png' %}" alt="image-logo"></h1>
+        <nav> 
+            <ul class="">
+                <li><a href="{% url 'index' %}">Home</a></li>
+                <li><a href="{% url 'produtos' %}">Produtos</a></li>
+                <li><a href="{% url 'contato' %}">Contato</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>

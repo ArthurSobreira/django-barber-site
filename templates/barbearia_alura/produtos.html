@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Barbearia Alura - Produtos</title>
+        <link rel="stylesheet" href="{% static 'styles/reset.css' %}"> 
+        <link rel="stylesheet" href="{% static 'styles/produtos.css' %}">
+    </head>
+    <body>
+        {% include 'barbearia_alura/partials/_header.html' %}
+
+        <main>
+            <ul class="products">
+                <li>
+                    <h2>Cabelo</h2>
+                    <img src="{% static 'assets/images/cabelo.jpg' %}" alt="image-cabelo">
+                    <p class="description">Na tesoura ou na máquina, como o cliente preferir</p>
+                    <p class="price">R$ 25,00</p>
+                </li>
+                <li>
+                    <h2>Barba</h2>
+                    <img src="{% static 'assets/images/barba.jpg' %}" alt="image-barba">
+                    <p class="description">Corte e desenho profissional de barba</p>
+                    <p class="price">R$ 18,00</p>
+                </li>
+                <li>
+                    <h2>Cabelo + Barba</h2>
+                    <img src="{% static 'assets/images/cabelo+barba.jpg' %}" alt="image-cabelo+barba">
+                    <p class="description">Pacote completo de cabelo e barba</p>
+                    <p class="price">R$ 35,00</p>
+                </li>
+            </ul>
+        </main>
+
+        {% include 'barbearia_alura/partials/_footer.html' %}
+    </body>
+</html>
